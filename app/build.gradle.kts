@@ -9,6 +9,7 @@ android {
     compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
+        namespace = project.name
         applicationId = ProjectConfig.appId
         minSdk = ProjectConfig.minSdk
         targetSdk = ProjectConfig.targetSdk
@@ -62,7 +63,7 @@ dependencies {
     kapt(DaggerHilt.hiltCompiler)
 
     implementation(project(Modules.core))
-    implementation(project(Modules.coreUi))
+    implementation(project(Modules.core_ui))
     implementation(project(Modules.onboardingPresentation))
     implementation(project(Modules.onboardingDomain))
     implementation(project(Modules.trackerPresentation))

@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdk ProjectConfig.compileSdk
 
     defaultConfig {
+        namespace project.name
         minSdk ProjectConfig.minSdk
         targetSdk ProjectConfig.targetSdk
         versionCode ProjectConfig.versionCode
