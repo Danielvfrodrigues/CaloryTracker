@@ -28,7 +28,7 @@ class DefaultPreferences(
             .apply()
     }
 
-    override fun saveHeight(height: Int) {
+    override fun saveWeight(height: Int) {
         sharePref.edit()
             .putInt(Preferences.KEY_HEIGHT, height)
             .apply()
